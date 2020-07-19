@@ -1,12 +1,10 @@
 import React from 'react';
 
-const Course = () => {
-
-    return (
+const CourseContainer = () => (
         <>
             <h1>Este es el primer curso</h1>
         </>
-    )
-}
 
-export default Course;
+)
+
+export default CourseContainer;
