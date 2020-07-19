@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Link} from "react-router-dom";
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import CoursesMenu from './CoursesMenu';
 
 const Home = () => {
@@ -7,12 +7,10 @@ const Home = () => {
     return (
         <div>
             <h1>home</h1>
-            Debugger
-            <Route exact path="/Home" component ={Home}/> 
-            <Route path={`/Home/courses`} component ={CoursesMenu}/> 
-            <div>
-                <Link to={CoursesMenu}><button>Ver cursos</button></Link>
-            </div>
+            <Router>
+                <Link to='/videoseries'><button>Ver cursos</button></Link>
+                <Route exact path='/videoseries' component={CoursesMenu} />
+            </Router>
         </div>
     )
 }
