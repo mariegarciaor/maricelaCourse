@@ -1,4 +1,7 @@
 import React from 'react';
+import strategy from '../../assets/strategy.PNG';
+import design from '../../assets/design.PNG';
+import storytelling from '../../assets/storytelling.PNG';
 
 const Brochure = () => {
 
@@ -11,7 +14,7 @@ const Brochure = () => {
                     <div className="row row-cols-1 row-cols-md-3">
                         <div className="col mb-4">
                             <div className="card">
-                                <img src="assets/strategy.PNG" className="card-img-top brochure-img" alt="..." />
+                                <img src={strategy} className="card-img-top brochure-img" alt="..." />
                                 <h5 className="card-title">Una estrategia clara</h5>
                                 <p className="brochure-text">A través de una estrategia de posicionamiento 
                                     profesional, definimos con claridad el siguiente paso en tu carrera
@@ -20,7 +23,7 @@ const Brochure = () => {
                         </div>
                         <div className="col mb-4">
                             <div className="card">
-                                <img src="assets/design.PNG" className="card-img-top brochure-img" alt="..." />
+                                <img src={design} className="card-img-top brochure-img" alt="..." />
                                 <h5 className="card-title">Un diseño increíble</h5>
                                 <p className="brochure-text">Trabajamos con fundamentos de diseño cuidando el detalle
                                     de las formas, tipografías, espacios y texturas. Con un resultado final estético
@@ -30,7 +33,7 @@ const Brochure = () => {
                         </div>
                         <div className="col mb-4">
                             <div className="card">
-                                <img src="assets/storytelling.PNG" className="card-img-top brochure-img" alt="..." />
+                                <img src={storytelling} className="card-img-top brochure-img" alt="..." />
                                 <h5 className="card-title">Una buena historia</h5>
                                 <p className="brochure-text">Con técnicas de Storytelling y Copywritting
                                     hacemos que tu historia profesional sea atractiva y haga sentido al empleador,

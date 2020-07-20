@@ -1,0 +1,14 @@
+#gallery {
+    /* border: 1px solid blue; */
+    background-image: url(../assets/4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 110vh;
+}
+
+.gallery-img {
+    max-height: 80vh;
+    object-fit: scale-down;
+}

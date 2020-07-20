@@ -1,4 +1,14 @@
 import React from 'react';
+import Carousel from 'react-bootstrap/Carousel'
+import '../../styles/gallery.css';
+
+import cv1 from '../../assets/cv1.png';
+import cv2 from '../../assets/cv2.png';
+import cv3 from '../../assets/cv3.png';
+import cv4 from '../../assets/cv4.png';
+import cv5 from '../../assets/cv5.png';
+
+
 
 const Gallery = () => {
 
@@ -6,27 +16,69 @@ const Gallery = () => {
         <>
             {/* Galeria */}
             <section id="galeria">
-                <div className="container">
+                <div>
                     <h3>Tu CV podría verse así de increíble:</h3>
-                    <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <img src="assets/cv1.png" className="d-block w-100" alt="curriculum-1" />
-                            </div>
-                            <div className="carousel-item">
-                                <img src="assets/cv2.png" className="d-block w-100" alt="curriculum-2" />
-                            </div>
-                            <div className="carousel-item">
-                                <img src="assets/cv3.png" className="d-block w-100" alt="curriculum-3" />
-                            </div>
-                            <div className="carousel-item">
-                                <img src="assets/cv4.png" className="d-block w-100" alt="curriculum-4" />
-                            </div>
-                            <div className="carousel-item">
-                                <img src="assets/cv5.png" className="d-block w-100" alt="curriculum-5" />
-                            </div>
-                        </div>
-                    </div>
+                    <Carousel id="#gallery">
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100 gallery-img"
+                            src={cv1}
+                            alt="First slide"
+                            />
+                            <Carousel.Caption>
+                            <h3>First slide label</h3>
+                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100 gallery-img"
+                            src={cv2}
+                            alt="Third slide"
+                            />
+
+                            <Carousel.Caption>
+                            <h3>Second slide label</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100 gallery-img"
+                            src={cv3}
+                            alt="Third slide"
+                            />
+
+                            <Carousel.Caption>
+                            <h3>Third slide label</h3>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100 gallery-img"
+                            src={cv4}
+                            alt="Third slide"
+                            />
+
+                            <Carousel.Caption>
+                            <h3>Third slide label</h3>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                            className="d-block w-100 gallery-img"
+                            src={cv5}
+                            alt="Third slide"
+                            />
+
+                            <Carousel.Caption>
+                            <h3>Third slide label</h3>
+                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
                 </div>
             </section>
             {/* /Galeria */}

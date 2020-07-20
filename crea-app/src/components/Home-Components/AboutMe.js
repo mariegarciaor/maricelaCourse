@@ -1,15 +1,18 @@
 import React from 'react';
+import marieFoto from '../../assets/marie-foto.png';
+import '../../styles/aboutme.css';
 
-const AboutUs = () => {
+
+const AboutMe = () => {
 
     return (
         <>
-            {/* About us */}
-            <section id="about" class="mb-5 mt-5">
-                <div class="container text-center">
+            {/* About me */}
+            <section id="about" className="mb-5 mt-5">
+                <div className="container text-center">
                     <h3>Acerca de Marie Garcia</h3>
-                    <div class="text-center">
-                        <img src="./assets/marie-foto.png" class="img-fluid" id="foto-marie" alt="Marie Garcia" />
+                    <div className="text-center">
+                        <img src={marieFoto} className="img-fluid" id="foto-marie" alt="Marie Garcia" />
                     </div>
                     <p>"Soy un alma emprendedora atrapada en el cuerpo de
                     una experimentada especialista en Gestión de Talento.
@@ -19,9 +22,9 @@ const AboutUs = () => {
                     <p><strong>Trabajemos juntos.</strong></p>
                 </div>
             </section>
-            {/* /About us */}
+            {/* /About me */}
         </>
     )
 }
 
-export default AboutUs;
+export default AboutMe;

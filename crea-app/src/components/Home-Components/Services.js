@@ -1,5 +1,12 @@
 import React from 'react';
 
+import cover1 from '../../assets/cover-l1.png';
+import cover2 from '../../assets/cover-l2.png';
+import cover3 from '../../assets/cover-l3.png';
+
+
+
+
 const Services = () => {
 
     return (
@@ -10,7 +17,7 @@ const Services = () => {
                     <h3>Encontremos el trabajo de tus sueños</h3>
                     <div className="card-deck">
                         <div className="card">
-                            <img className="card-img-top" src="assets/cover-l1.png" alt="Card image cap" />
+                            <img className="card-img-top" src={cover1} alt="Card 1" />
                             <i className="fas fa-keyboard"></i>
                             <div className="card-body">
                                 <h5 className="card-title">Diseño de Curriculum Vitae</h5>
@@ -23,7 +30,7 @@ const Services = () => {
                             </div>
                         </div>
                         <div className="card"> 
-                            <img className="card-img-top" src="assets/cover-l2.png" alt="Card image cap" />
+                            <img className="card-img-top" src={cover2} alt="Card 2" />
                             <i className="fas fa-magic"></i>
                             <div className="card-body">
                                 <h5 className="card-title">Masterclass individual</h5>
@@ -35,7 +42,7 @@ const Services = () => {
                             </div>
                         </div>
                         <div className="card">
-                            <img className="card-img-top" src="assets/cover-l3.png" alt="Card image cap" />
+                            <img className="card-img-top" src={cover3} alt="Card 3" />
                             <i className="fas fa-chess-knight"></i>
                             <div className="card-body">
                                 <h5 className="card-title">Coaching continuo</h5>

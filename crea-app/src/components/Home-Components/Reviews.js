@@ -23,7 +23,7 @@ const Reviews = () => {
                             <p class="mb-0">"Hola! Te comento que ya tengo trabajo con muy buen sueldo
                             y con mayor estabilidad laboral. Mi jefa practicamente me dijo que le llamó
                                 mucho la atención mi CV y por eso tuvo mucho interes en mi perfil.
-                                Muchas gracias por tu ayuda 😃😃"</p>
+                                Muchas gracias por tu ayuda."</p>
                             <footer class="blockquote-footer">Asistente Ejecutiva</footer>
                         </blockquote>
                         
