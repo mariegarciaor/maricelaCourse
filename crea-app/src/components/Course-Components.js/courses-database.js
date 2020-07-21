@@ -4,6 +4,8 @@ const course = {
     category: 'Busqueda de empleo',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
     instructor: 'Marie Garcia',
+    duration: 2,
+    price: 0,
     modules: [
         module1 = {
            title: '',
@@ -35,9 +37,7 @@ const course = {
            steps: ' ',
            url: ' '
         }
-    ],
-    duration: 2,
-    price: 0,
+    ]  
 } 
 
 export default courses;

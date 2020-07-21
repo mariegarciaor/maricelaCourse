@@ -1,0 +1,20 @@
+.module-container {
+    background-color: white;
+    margin: 35px 80px;
+    padding: 45px 30px;
+    border-radius: 15px;
+}
+
+.module-container .container {
+    border: 1px white solid;
+}
+
+.module-video-description {
+    /* background-color: aqua; */
+    margin-top: 20px;
+}
+
+.module-video .col-md-auto {
+    padding: 0;
+    margin: 0;
+}
