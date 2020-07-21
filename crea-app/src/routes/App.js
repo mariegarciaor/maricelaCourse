@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route} from "react-router-dom";
+import { BrowserRouter, Route } from 'react-router-dom';
 import NavBar from '../pages/Layout/NavBar';
 import Footer from '../pages/Layout/Footer';
 
@@ -10,21 +10,21 @@ import Store from '../pages/Store';
 
 import '../styles/app.css';
 
-
 const App = () => (
-  <body className="app-container">
+  <div className="app-container">
     <NavBar />
     <content>
       <BrowserRouter>
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
         <Route exact path="/courses" component={CoursesList} />
-        <Route path="/courses/current-course" component={CourseContainer} />
+        <Route path="/courses/:id" component={CourseContainer} />
+
         <Route exact path="/store" component={Store} />
       </BrowserRouter>
     </content>
     <Footer />
-  </body>
-)
+  </div>
+);
 
 export default App;

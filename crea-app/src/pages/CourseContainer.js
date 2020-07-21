@@ -1,15 +1,18 @@
 import React from 'react';
-import CourseModule from '../components/Course-Components.js/module'
+import { useParams } from 'react-router-dom';
+import CourseModule from '../components/Course-Components.js/module';
 import '../styles/coursecontainer.css';
 
+const CourseContainer = () => {
+  let { id } = useParams();
 
-const CourseContainer = () => (
-        <div className="course-container">
-            <h1>Este es el primer curso</h1>
-            <CourseModule />
-            <CourseModule />
-        </div>
-
-)
+  return (
+    <div className="course-container">
+      <h1>Este es el primer curso id :{id}</h1>
+      <CourseModule />
+      <CourseModule />
+    </div>
+  );
+};
 
 export default CourseContainer;
